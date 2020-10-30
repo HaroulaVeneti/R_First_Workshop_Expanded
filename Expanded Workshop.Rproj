@@ -1,0 +1,105 @@
+print("I am Charoula Veneti")
+print("I am a student of Applied Social Sciences at SMI and this is my first workshop from 301")
+#Perform tasks and commit changes and push them on git#
+library("tidyverse")
+#Book's Example#
+object<-function
+evanescence<-c("Amy", "Jen", "Will", "Troy", "Tim")
+evanescence
+evanescence<-c(evanescence, "Ben")
+evanescence
+#Creating Variables#
+evanescenceNames<-c("Amy", "Jen", "Will", "Troy", "Tim")
+evanescenceAges<-c(35, 37, 38, 40, 41)
+#Data that contain text text are called string variables#
+#Data that contain numbers or are numeric are called numeric variables#
+
+#Creating Dataframes# 
+#Dataframe is an object cantains variables#
+
+evanescence<-data.frame(Name = evanescenceNames, Age = evanescenceAges)
+
+evanescence
+evanescence$childAge
+evanescence$childAge<-c(7,10,12, 6, 9)
+evanescence$childAge
+#Remember how you can add variables by placing the object which is my band the $ sign and the variable you want to add#
+#List the variables in a data frame in case you have large datasts#
+#example#
+names(evanescence)
+#the output shows the list of variables' names#
+#list() function creates a list of seperate objects, creates sort of bag into which you can place,#
+#objects that you have createdin R#
+
+evanescence<-list(evanescenceNames, evanescenceAges)
+evanescence
+
+#I can use rbind() to combine rows of data together#
+
+evanescence<-rbind(evanescenceNames, evanescenceAges)
+evanescence
+
+
+#Calculating new variables from existing ones#
+evanescence$parenthoodAge <- evanescenceAges - evanescencechildAge
+evanescence$parenthoodAge
+parenthoodAge
+evanescence
+evanescence<-rbind(evanescence$Ages, evanescence$childAge, evanescence$eparenthoodAge)
+evanescence
+
+
+
+
+#301 WORKSHOP Date:10/10/2020# 
+
+#R For Ultra Beginners Part 1 - Exercises#
+2 * 32
+
+7 - 5 * 4
+
+remove("x")
+remove("y")
+
+x <-2
+x
+y<-3
+y
+
+3-5
+
+x<-4
+y<-5
+x
+y
+6x+2y
+
+x=9
+
+
+x<-8
+y<-10
+x*y
+x<-8
+x=9
+6*x
+
+2^3
+#Vectors# 
+
+my_vector<-c(9,7,6,5)
+
+my_vector
+1:10
+5:12
+rep(3,7)
+#rep stands for repeat, i want no.3 repeated 7 times#
+rep(1,15)
+
+my_vector<-c(0,2,4,6,8,10)
+my_vector
+2*my_vector
+1:6*my_vector
+rep(2,3)+my_vector
+
+1:4-my_vector
