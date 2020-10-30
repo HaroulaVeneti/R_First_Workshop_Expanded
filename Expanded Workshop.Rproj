@@ -95,7 +95,7 @@ my_vector
 rep(3,7)
 #rep stands for repeat, i want no.3 repeated 7 times#
 rep(1,15)
-
+mean(my_vector)
 my_vector<-c(0,2,4,6,8,10)
 my_vector
 2*my_vector
@@ -103,3 +103,4 @@ my_vector
 rep(2,3)+my_vector
 
 1:4-my_vector
+#End workshop#
